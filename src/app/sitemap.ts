@@ -19,13 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/about/`,
       lastModified: new Date('2025-01-01'),
-      changeFrequency: 'quarterly',
+      changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/contact/`,
       lastModified: new Date('2025-01-01'),
-      changeFrequency: 'quarterly',
+      changeFrequency: 'yearly',
       priority: 0.8,
     },
   ];
