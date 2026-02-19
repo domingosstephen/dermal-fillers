@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Wholesale Dermal Filler Products | HA Injectables Catalogue | AestheFill Pro</title>
+  <meta name="description" content="Browse our full wholesale catalogue of CE-certified hyaluronic acid dermal fillers. Three precision-engineered HA ranges — Soft, Volume, and Deep — for every aesthetic indication. Trade pricing available to licensed practitioners." />
+  <meta name="keywords" content="wholesale dermal fillers catalogue, hyaluronic acid fillers range, CE certified HA fillers, AestheFill Soft, AestheFill Volume, AestheFill Deep, dermal filler viscosity range, aesthetic injectables wholesale" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://www.yourdomain.com/products.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.yourdomain.com/products.html" />
+  <meta property="og:title" content="Wholesale Dermal Filler Products Catalogue | AestheFill Pro" />
+  <meta property="og:description" content="Three CE-certified HA filler ranges formulated for every anatomical zone and clinical technique. Wholesale pricing for licensed practitioners in the USA and Europe." />
+  <meta property="og:image" content="https://www.yourdomain.com/assets/og-products.jpg" />
+  <meta property="og:site_name" content="AestheFill Pro" />
+
+  <!-- Schema.org — ItemList (Product Catalogue) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "AestheFill Pro Dermal Filler Catalogue",
+    "description": "Wholesale hyaluronic acid dermal fillers for licensed aesthetic practitioners",
+    "url": "https://www.yourdomain.com/products.html",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "AestheFill Soft",
+          "description": "Low-viscosity HA filler for superficial lines, periorbital correction, and lip definition. 16 mg/mL hyaluronic acid concentration.",
+          "brand": { "@type": "Brand", "name": "AestheFill Pro" },
+          "category": "Medical Device — Dermal Filler",
+          "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AestheFill Pro" } }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "AestheFill Volume",
+          "description": "Mid-range viscosity HA filler for cheek augmentation, nasolabial folds, and midface volumisation. 22 mg/mL hyaluronic acid concentration.",
+          "brand": { "@type": "Brand", "name": "AestheFill Pro" },
+          "category": "Medical Device — Dermal Filler",
+          "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AestheFill Pro" } }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "AestheFill Deep",
+          "description": "High-density, cross-linked HA filler for deep structural correction, jawline contouring, and chin projection. 24 mg/mL hyaluronic acid concentration.",
+          "brand": { "@type": "Brand", "name": "AestheFill Pro" },
+          "category": "Medical Device — Dermal Filler",
+          "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AestheFill Pro" } }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <style>
+    /* Page-specific styles */
+    .product-range-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-8);
+      margin-bottom: var(--space-12);
+      padding-bottom: var(--space-8);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .range-indicator {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-4);
+    }
+
+    .range-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-gold);
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .spec-table tr {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .spec-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .spec-table td {
+      padding: var(--space-3) 0;
+      font-size: var(--text-sm);
+    }
+
+    .spec-table td:first-child {
+      font-weight: 600;
+      color: var(--color-navy);
+      width: 45%;
+    }
+
+    .spec-table td:last-child {
+      color: var(--color-text-muted);
+    }
+
+    .product-full-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      margin-bottom: var(--space-12);
+      transition: box-shadow var(--transition-normal);
+    }
+
+    .product-full-card:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .product-full-card--featured {
+      border-color: rgba(201,168,76,0.40);
+      box-shadow: 0 0 0 2px rgba(201,168,76,0.10);
+    }
+
+    .product-full-card__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product-full-card__image {
+      grid-column: 1;
+    }
+
+    .product-full-card__content {
+      grid-column: 2;
+      padding: var(--space-10);
+      border-right: 1px solid var(--color-border);
+    }
+
+    .product-full-card__specs {
+      grid-column: 3;
+      padding: var(--space-10);
+      background: var(--color-off-white);
+    }
+
+    .indication-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+    }
+
+    .indication-tag {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-navy-mid);
+      background: var(--color-slate-50);
+      border: 1px solid var(--color-slate-100);
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+    }
+
+    .comparison-wrapper {
+      overflow-x: auto;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 900px) {
+      .product-full-card__inner {
+        grid-template-columns: 1fr;
+      }
+
+      .product-full-card__image {
+        grid-column: 1;
+      }
+
+      .product-full-card__content {
+        grid-column: 1;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .product-full-card__specs {
+        grid-column: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement-bar" role="banner">
+    <strong>Trade Accounts Only</strong> — CE-certified products for licensed practitioners &nbsp;·&nbsp; Cold-chain guaranteed &nbsp;·&nbsp; <a href="contact.html#enquire" style="color: var(--color-gold-light); text-decoration:underline;">Enquire for pricing →</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="AestheFill Pro — Home">
+        <div class="nav__logo-mark" aria-hidden="true">A</div>
+        <span class="nav__logo-text">Aesthete<span>Fill</span> Pro</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="products.html" class="nav__link active" aria-current="page">Products</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html#enquire" class="nav__cta">Enquire to Purchase →</a>
+      <button class="nav__hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="products.html" class="mobile-menu__link">Products</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <div style="margin-top: 2rem;">
+      <a href="contact.html#enquire" class="btn btn--primary btn--lg" style="width:100%; justify-content:center;">Enquire to Purchase →</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">›</span>
+          <span aria-current="page">Products</span>
+        </nav>
+        <h1 id="page-heading">The Complete Product Catalogue.</h1>
+        <p>Three CE-certified hyaluronic acid filler ranges, engineered for precision across every anatomical zone. Wholesale supply for licensed practitioners.</p>
+      </div>
+    </section>
+
+    <!-- Catalogue Intro -->
+    <section class="section--sm" style="background: var(--color-white); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap: var(--space-8); flex-wrap:wrap;">
+
+          <div>
+            <p style="font-size: var(--text-lg); color: var(--color-navy); font-weight: 500; margin-bottom: var(--space-2);">
+              All products carry CE marking under EU MDR 2017/745 and full cold-chain documentation.
+            </p>
+            <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
+              Pricing is available to verified trade accounts only. Enquire below to receive your personalised quote.
+            </p>
+          </div>
+
+          <div style="display:flex; gap: var(--space-3); flex-shrink:0;">
+            <a href="contact.html#enquire" class="btn btn--primary" aria-label="Enquire for trade pricing">Enquire for Pricing →</a>
+            <a href="#comparison" class="btn btn--outline-navy" aria-label="Jump to product comparison table">Compare Products</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PRODUCT 1 — AESTHEFILL SOFT
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="soft" aria-labelledby="soft-heading">
+      <div class="container">
+
+        <div class="product-full-card">
+          <div class="product-full-card__inner">
+
+            <!-- Image -->
+            <div class="product-full-card__image">
+              <div class="img-placeholder" style="height:100%; min-height:420px; border-radius: var(--radius-xl) 0 0 var(--radius-xl); border:none;" role="img" aria-label="Product image placeholder: AestheFill Soft syringe and packaging — clean studio photograph, white background with soft blue-white lighting, minimal shadow — 600×500px WebP">
+                <span class="product-card__badge" style="position:relative; top:auto; left:auto;">Superficial Lines</span>
+                <div class="img-placeholder__label">AestheFill Soft Product Photography<br />600×500px WebP, white BG, studio lit</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="product-full-card__content">
+              <span class="eyebrow">Range 01</span>
+              <h2 id="soft-heading" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">AestheFill Soft</h2>
+              <div class="badge badge--gold" style="margin-bottom: var(--space-5);">Fine Lines &amp; Lip Definition</div>
+
+              <p style="margin-bottom: var(--space-5);">
+                Our lowest-viscosity formula, designed for work where precision and natural movement are paramount. AestheFill Soft integrates smoothly into the superficial dermis, providing reliable hydration, subtle definition, and a consistent finish that experienced practitioners trust repeat-treatment after repeat-treatment.
+              </p>
+
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-6);">
+                The low cross-linking density ensures minimal swelling on injection and excellent moulding in delicate anatomical zones, including the periorbital area and vermilion border.
+              </p>
+
+              <h5 style="margin-bottom: var(--space-3);">Indicated Treatment Areas</h5>
+              <div class="indication-list" aria-label="Recommended treatment areas for AestheFill Soft">
+                <span class="indication-tag">Periorbital Lines</span>
+                <span class="indication-tag">Lip Definition</span>
+                <span class="indication-tag">Superficial Wrinkles</span>
+                <span class="indication-tag">Décolleté</span>
+                <span class="indication-tag">Neck &amp; Décolleté</span>
+                <span class="indication-tag">Glabellar Lines</span>
+                <span class="indication-tag">Superficial Skin Hydration</span>
+              </div>
+
+              <div style="margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); display:flex; gap: var(--space-3);">
+                <a href="contact.html#enquire" class="btn btn--primary" aria-label="Enquire about AestheFill Soft pricing">Enquire for Pricing →</a>
+                <a href="contact.html#samples" class="btn btn--outline-navy" aria-label="Request a sample of AestheFill Soft">Request Sample</a>
+              </div>
+            </div>
+
+            <!-- Specs -->
+            <div class="product-full-card__specs">
+              <h5 style="margin-bottom: var(--space-5);">Technical Specifications</h5>
+              <table class="spec-table" aria-label="AestheFill Soft technical specifications">
+                <tbody>
+                  <tr>
+                    <td>HA Concentration</td>
+                    <td>16 mg/mL</td>
+                  </tr>
+                  <tr>
+                    <td>Cross-Linking Degree</td>
+                    <td>Low (BDDE)</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity (G')</td>
+                    <td>85 Pa</td>
+                  </tr>
+                  <tr>
+                    <td>Volume Options</td>
+                    <td>0.3 mL · 1.0 mL</td>
+                  </tr>
+                  <tr>
+                    <td>Lidocaine</td>
+                    <td>0.3% (optional)</td>
+                  </tr>
+                  <tr>
+                    <td>Needles Included</td>
+                    <td>27G × 0.5" (×2)</td>
+                  </tr>
+                  <tr>
+                    <td>Injection Depth</td>
+                    <td>Superficial dermis</td>
+                  </tr>
+                  <tr>
+                    <td>Duration (Est.)</td>
+                    <td>6–9 months</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>2–8 °C</td>
+                  </tr>
+                  <tr>
+                    <td>Shelf Life</td>
+                    <td>24 months from mfg.</td>
+                  </tr>
+                  <tr>
+                    <td>Regulatory Status</td>
+                    <td>CE / MDR 2017/745</td>
+                  </tr>
+                  <tr>
+                    <td>GMP Manufacture</td>
+                    <td>EU Certified Facility</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div style="margin-top: var(--space-6); padding: var(--space-4); background: var(--color-gold-pale); border-radius: var(--radius-md);">
+                <p style="font-size: var(--text-xs); color: var(--color-navy); font-weight: 600; margin-bottom: var(--space-1);">Documentation Included</p>
+                <p style="font-size: var(--text-xs); color: var(--color-text-muted);">CE Certificate · Batch Certificate · IFU · Cold-Chain Records</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PRODUCT 2 — AESTHEFILL VOLUME
+    ═══════════════════════════════════════════ -->
+    <section class="section section--slate" id="volume" aria-labelledby="volume-heading">
+      <div class="container">
+
+        <div class="product-full-card product-full-card--featured">
+          <div style="background: linear-gradient(90deg, var(--color-navy) 0%, var(--color-navy-mid) 100%); padding: var(--space-3) var(--space-8); display:flex; align-items:center; gap: var(--space-3);">
+            <span style="font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.10em; text-transform:uppercase; color: var(--color-gold);">★ Most Requested by Trade Accounts</span>
+          </div>
+
+          <div class="product-full-card__inner">
+
+            <!-- Image -->
+            <div class="product-full-card__image">
+              <div class="img-placeholder" style="height:100%; min-height:420px; border-radius:0; border:none;" role="img" aria-label="Product image placeholder: AestheFill Volume syringe and premium packaging — studio photograph with warm gold accent lighting, dark navy-gradient background — 600×500px WebP">
+                <span class="product-card__badge" style="position:relative; top:auto; left:auto; background: var(--color-gold); color: var(--color-navy);">Most Requested</span>
+                <div class="img-placeholder__label">AestheFill Volume Product Photography<br />600×500px WebP, dark BG with gold accent lighting</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="product-full-card__content">
+              <span class="eyebrow">Range 02</span>
+              <h2 id="volume-heading" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">AestheFill Volume</h2>
+              <div class="badge badge--navy" style="margin-bottom: var(--space-5);">Mid-Face Volumisation &amp; Contouring</div>
+
+              <p style="margin-bottom: var(--space-5);">
+                The centrepiece of our range. AestheFill Volume delivers the lift, projection, and duration that a full-service aesthetic clinic depends on for its mid-face and contouring work. Its optimised rheology — a balance of cohesivity and elasticity — gives practitioners precise control over volume placement and natural-looking results that last.
+              </p>
+
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-6);">
+                The formulation supports both linear threading and bolus injection techniques, making it the versatile workhorse for practices treating a broad range of patient profiles and treatment plans.
+              </p>
+
+              <h5 style="margin-bottom: var(--space-3);">Indicated Treatment Areas</h5>
+              <div class="indication-list" aria-label="Recommended treatment areas for AestheFill Volume">
+                <span class="indication-tag">Cheek Augmentation</span>
+                <span class="indication-tag">Nasolabial Folds</span>
+                <span class="indication-tag">Midface Volumisation</span>
+                <span class="indication-tag">Marionette Lines</span>
+                <span class="indication-tag">Lip Body Volume</span>
+                <span class="indication-tag">Temple Hollowing</span>
+                <span class="indication-tag">Pre-Jowl Sulcus</span>
+              </div>
+
+              <div style="margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); display:flex; gap: var(--space-3);">
+                <a href="contact.html#enquire" class="btn btn--primary" aria-label="Enquire about AestheFill Volume pricing">Enquire for Pricing →</a>
+                <a href="contact.html#samples" class="btn btn--outline-navy" aria-label="Request a sample of AestheFill Volume">Request Sample</a>
+              </div>
+            </div>
+
+            <!-- Specs -->
+            <div class="product-full-card__specs">
+              <h5 style="margin-bottom: var(--space-5);">Technical Specifications</h5>
+              <table class="spec-table" aria-label="AestheFill Volume technical specifications">
+                <tbody>
+                  <tr>
+                    <td>HA Concentration</td>
+                    <td>22 mg/mL</td>
+                  </tr>
+                  <tr>
+                    <td>Cross-Linking Degree</td>
+                    <td>Medium (BDDE)</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity (G')</td>
+                    <td>250 Pa</td>
+                  </tr>
+                  <tr>
+                    <td>Volume Options</td>
+                    <td>1.0 mL · 2.0 mL</td>
+                  </tr>
+                  <tr>
+                    <td>Lidocaine</td>
+                    <td>0.3% (optional)</td>
+                  </tr>
+                  <tr>
+                    <td>Needles Included</td>
+                    <td>25G × 1" (×2)</td>
+                  </tr>
+                  <tr>
+                    <td>Injection Depth</td>
+                    <td>Deep dermis / subcutis</td>
+                  </tr>
+                  <tr>
+                    <td>Duration (Est.)</td>
+                    <td>12–18 months</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>2–8 °C</td>
+                  </tr>
+                  <tr>
+                    <td>Shelf Life</td>
+                    <td>24 months from mfg.</td>
+                  </tr>
+                  <tr>
+                    <td>Regulatory Status</td>
+                    <td>CE / MDR 2017/745</td>
+                  </tr>
+                  <tr>
+                    <td>GMP Manufacture</td>
+                    <td>EU Certified Facility</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div style="margin-top: var(--space-6); padding: var(--space-4); background: var(--color-gold-pale); border-radius: var(--radius-md);">
+                <p style="font-size: var(--text-xs); color: var(--color-navy); font-weight: 600; margin-bottom: var(--space-1);">Documentation Included</p>
+                <p style="font-size: var(--text-xs); color: var(--color-text-muted);">CE Certificate · Batch Certificate · IFU · Cold-Chain Records</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PRODUCT 3 — AESTHEFILL DEEP
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="deep" aria-labelledby="deep-heading">
+      <div class="container">
+
+        <div class="product-full-card">
+          <div class="product-full-card__inner">
+
+            <!-- Image -->
+            <div class="product-full-card__image">
+              <div class="img-placeholder" style="height:100%; min-height:420px; border-radius: var(--radius-xl) 0 0 var(--radius-xl); border:none;" role="img" aria-label="Product image placeholder: AestheFill Deep syringe and premium dark packaging — architectural studio photograph, dark navy-to-black gradient background, dramatic directional lighting — 600×500px WebP">
+                <span class="product-card__badge" style="position:relative; top:auto; left:auto;">Deep Tissue</span>
+                <div class="img-placeholder__label">AestheFill Deep Product Photography<br />600×500px WebP, dark dramatic studio lighting</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="product-full-card__content">
+              <span class="eyebrow">Range 03</span>
+              <h2 id="deep-heading" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">AestheFill Deep</h2>
+              <div class="badge badge--navy" style="margin-bottom: var(--space-5);">Structural Correction &amp; Contouring</div>
+
+              <p style="margin-bottom: var(--space-5);">
+                AestheFill Deep is formulated for advanced practitioners who work at the deepest anatomical levels. Its high-density, highly cross-linked matrix provides the mechanical support required for structural correction — jawline definition, chin projection, and deep malar enhancement — with results that stand the test of time.
+              </p>
+
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-6);">
+                Suitable for both supraperiosteal and deep dermal placement. Compatible with cannula techniques. Recommended for practitioners with advanced anatomical training and demonstrable experience in deep-plane injection.
+              </p>
+
+              <div class="highlight-box" style="margin-bottom: var(--space-6);">
+                <p><strong>Advanced Practitioners:</strong> This product is recommended for clinicians with advanced anatomical training in deep-plane facial injection. Clinical assessment of patient suitability is the practitioner's responsibility.</p>
+              </div>
+
+              <h5 style="margin-bottom: var(--space-3);">Indicated Treatment Areas</h5>
+              <div class="indication-list" aria-label="Recommended treatment areas for AestheFill Deep">
+                <span class="indication-tag">Jawline Definition</span>
+                <span class="indication-tag">Chin Projection</span>
+                <span class="indication-tag">Malar Augmentation</span>
+                <span class="indication-tag">Deep Nasolabial Folds</span>
+                <span class="indication-tag">Nose Bridge (Advanced)</span>
+                <span class="indication-tag">Mandibular Angle</span>
+              </div>
+
+              <div style="margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); display:flex; gap: var(--space-3);">
+                <a href="contact.html#enquire" class="btn btn--primary" aria-label="Enquire about AestheFill Deep pricing">Enquire for Pricing →</a>
+                <a href="contact.html#samples" class="btn btn--outline-navy" aria-label="Request a sample of AestheFill Deep">Request Sample</a>
+              </div>
+            </div>
+
+            <!-- Specs -->
+            <div class="product-full-card__specs">
+              <h5 style="margin-bottom: var(--space-5);">Technical Specifications</h5>
+              <table class="spec-table" aria-label="AestheFill Deep technical specifications">
+                <tbody>
+                  <tr>
+                    <td>HA Concentration</td>
+                    <td>24 mg/mL</td>
+                  </tr>
+                  <tr>
+                    <td>Cross-Linking Degree</td>
+                    <td>High (BDDE)</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity (G')</td>
+                    <td>480 Pa</td>
+                  </tr>
+                  <tr>
+                    <td>Volume Options</td>
+                    <td>1.0 mL · 2.0 mL</td>
+                  </tr>
+                  <tr>
+                    <td>Lidocaine</td>
+                    <td>0.3% (optional)</td>
+                  </tr>
+                  <tr>
+                    <td>Needles / Cannula</td>
+                    <td>23G needle · 22G cannula option</td>
+                  </tr>
+                  <tr>
+                    <td>Injection Depth</td>
+                    <td>Supraperiosteal / deep dermis</td>
+                  </tr>
+                  <tr>
+                    <td>Duration (Est.)</td>
+                    <td>18–24 months</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>2–8 °C</td>
+                  </tr>
+                  <tr>
+                    <td>Shelf Life</td>
+                    <td>24 months from mfg.</td>
+                  </tr>
+                  <tr>
+                    <td>Regulatory Status</td>
+                    <td>CE / MDR 2017/745</td>
+                  </tr>
+                  <tr>
+                    <td>GMP Manufacture</td>
+                    <td>EU Certified Facility</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div style="margin-top: var(--space-6); padding: var(--space-4); background: var(--color-gold-pale); border-radius: var(--radius-md);">
+                <p style="font-size: var(--text-xs); color: var(--color-navy); font-weight: 600; margin-bottom: var(--space-1);">Documentation Included</p>
+                <p style="font-size: var(--text-xs); color: var(--color-text-muted);">CE Certificate · Batch Certificate · IFU · Cold-Chain Records</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PRODUCT COMPARISON TABLE
+    ═══════════════════════════════════════════ -->
+    <section class="section section--slate" id="comparison" aria-labelledby="comparison-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">Product Comparison</span>
+          <h2 id="comparison-heading">Choose the Right Formula for Every Indication.</h2>
+          <p>A side-by-side comparison of all three AestheFill Pro ranges to guide product selection for your clinic.</p>
+        </div>
+
+        <div class="comparison-wrapper">
+          <table class="comparison-table" aria-label="Comparison of AestheFill Soft, Volume, and Deep product ranges">
+            <thead>
+              <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">AestheFill Soft</th>
+                <th scope="col">AestheFill Volume ★</th>
+                <th scope="col">AestheFill Deep</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>HA Concentration</strong></td>
+                <td>16 mg/mL</td>
+                <td>22 mg/mL</td>
+                <td>24 mg/mL</td>
+              </tr>
+              <tr>
+                <td><strong>Cross-Linking</strong></td>
+                <td>Low (BDDE)</td>
+                <td>Medium (BDDE)</td>
+                <td>High (BDDE)</td>
+              </tr>
+              <tr>
+                <td><strong>Viscosity (G')</strong></td>
+                <td>85 Pa</td>
+                <td>250 Pa</td>
+                <td>480 Pa</td>
+              </tr>
+              <tr>
+                <td><strong>Injection Depth</strong></td>
+                <td>Superficial dermis</td>
+                <td>Deep dermis / subcutis</td>
+                <td>Supraperiosteal / deep dermis</td>
+              </tr>
+              <tr>
+                <td><strong>Volume Options</strong></td>
+                <td>0.3 mL · 1.0 mL</td>
+                <td>1.0 mL · 2.0 mL</td>
+                <td>1.0 mL · 2.0 mL</td>
+              </tr>
+              <tr>
+                <td><strong>Duration (Est.)</strong></td>
+                <td>6–9 months</td>
+                <td>12–18 months</td>
+                <td>18–24 months</td>
+              </tr>
+              <tr>
+                <td><strong>Included Needle</strong></td>
+                <td>27G × 0.5"</td>
+                <td>25G × 1"</td>
+                <td>23G needle / 22G cannula</td>
+              </tr>
+              <tr>
+                <td><strong>Lidocaine Option</strong></td>
+                <td>0.3%</td>
+                <td>0.3%</td>
+                <td>0.3%</td>
+              </tr>
+              <tr>
+                <td><strong>CE Certification</strong></td>
+                <td>✓ MDR 2017/745</td>
+                <td>✓ MDR 2017/745</td>
+                <td>✓ MDR 2017/745</td>
+              </tr>
+              <tr>
+                <td><strong>Primary Indications</strong></td>
+                <td>Fine lines, lips, periorbital</td>
+                <td>Cheeks, midface, folds</td>
+                <td>Jaw, chin, deep structural</td>
+              </tr>
+              <tr>
+                <td><strong>Practitioner Level</strong></td>
+                <td>All levels</td>
+                <td>Intermediate – Advanced</td>
+                <td>Advanced only</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align:center; margin-top: var(--space-10);">
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-5); font-size: var(--text-sm);">Duration estimates are based on typical patient profiles and injection technique. Individual results vary.</p>
+          <a href="contact.html#enquire" class="btn btn--primary btn--lg" aria-label="Enquire about pricing for the full range">
+            Enquire for the Full Range →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ORDERING INFORMATION
+    ═══════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="ordering-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">How Ordering Works</span>
+          <h2 id="ordering-heading">Everything You Need to Know Before Your First Order.</h2>
+        </div>
+
+        <div class="grid-3">
+
+          <div style="padding: var(--space-8); background: var(--color-off-white); border-radius: var(--radius-xl); border: 1px solid var(--color-border);">
+            <div style="width:48px;height:48px;background:var(--color-gold-pale);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-4);color:var(--color-gold);">
+              <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h4 style="margin-bottom: var(--space-3);">Account Eligibility</h4>
+            <p style="font-size: var(--text-sm);">Available to licensed aesthetic practitioners, registered clinics, medical spas, and wholesale distributors. Proof of credentials required at account setup.</p>
+          </div>
+
+          <div style="padding: var(--space-8); background: var(--color-off-white); border-radius: var(--radius-xl); border: 1px solid var(--color-border);">
+            <div style="width:48px;height:48px;background:var(--color-gold-pale);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-4);color:var(--color-gold);">
+              <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+            </div>
+            <h4 style="margin-bottom: var(--space-3);">Pricing Structure</h4>
+            <p style="font-size: var(--text-sm);">Trade pricing is tiered by volume. All prices quoted exclusive of applicable taxes. Pricing is confirmed in your account agreement after verification.</p>
+          </div>
+
+          <div style="padding: var(--space-8); background: var(--color-off-white); border-radius: var(--radius-xl); border: 1px solid var(--color-border);">
+            <div style="width:48px;height:48px;background:var(--color-gold-pale);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-4);color:var(--color-gold);">
+              <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <h4 style="margin-bottom: var(--space-3);">Dispatch &amp; Delivery</h4>
+            <p style="font-size: var(--text-sm);">Orders dispatched within 48 hours. All shipments temperature-controlled with monitoring records. Full tracking provided from dispatch to delivery.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--dark" aria-labelledby="products-cta-heading">
+      <div class="container" style="text-align:center;">
+        <span class="eyebrow" style="color: var(--color-gold-light);">Get Started Today</span>
+        <h2 id="products-cta-heading" style="color: var(--color-white); margin-top: var(--space-3); margin-bottom: var(--space-4); max-width: 600px; margin-inline: auto;">
+          Ready to Enquire? Your Account Manager is Waiting.
+        </h2>
+        <p style="color: rgba(255,255,255,0.70); max-width: 480px; margin-inline: auto; margin-bottom: var(--space-8);">
+          Submit your trade enquiry and receive personalised pricing within 24 hours. No commitment required at the enquiry stage.
+        </p>
+        <a href="contact.html#enquire" class="btn btn--primary btn--lg" aria-label="Submit a trade enquiry for AestheFill Pro products">
+          Submit Trade Enquiry →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>AestheFill Pro</h3>
+          <p>Premium CE-certified dermal fillers and hyaluronic acid injectables, supplied wholesale to licensed aesthetic practitioners across the USA and Europe.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="#soft">AestheFill Soft</a></li>
+            <li><a href="#volume">AestheFill Volume</a></li>
+            <li><a href="#deep">AestheFill Deep</a></li>
+            <li><a href="#comparison">Compare All</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#compliance">Compliance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Trade</h5>
+          <ul>
+            <li><a href="contact.html#enquire">Enquire to Purchase</a></li>
+            <li><a href="mailto:trade@yourdomain.com">trade@yourdomain.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 AestheFill Pro. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Sale</a>
+        </div>
+      </div>
+      <p class="footer__compliance">Products are medical devices sold exclusively to licensed practitioners. CE-marked under EU MDR 2017/745. US purchasers responsible for applicable federal and state compliance. Not for retail consumer sale.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta-bar" role="complementary">
+    <a href="contact.html#enquire" class="btn btn--primary" style="width:100%; justify-content:center;">Enquire to Purchase →</a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', function () {
+      const isOpen = mobileMenu.classList.contains('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', !isOpen);
+      document.body.style.overflow = isOpen ? '' : 'hidden';
+    });
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
+
+</body>
+</html>

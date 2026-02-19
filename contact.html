@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Enquire to Purchase | Trade Contact | AestheFill Pro Wholesale Dermal Fillers</title>
+  <meta name="description" content="Enquire about wholesale dermal filler pricing for your clinic or practice. Licensed practitioners and registered clinics only. Verification within 1 business day. Personalised pricing within 24 hours." />
+  <meta name="keywords" content="enquire dermal fillers wholesale, buy dermal fillers trade, dermal filler supplier contact, wholesale filler pricing USA Europe, AestheFill Pro contact, trade account aesthetic injectables" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.yourdomain.com/contact.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.yourdomain.com/contact.html" />
+  <meta property="og:title" content="Enquire to Purchase | AestheFill Pro Trade Contact" />
+  <meta property="og:description" content="Start your trade enquiry for wholesale CE-certified dermal fillers. Licensed practitioners only. Personalised pricing within 24 hours." />
+  <meta property="og:image" content="https://www.yourdomain.com/assets/og-contact.jpg" />
+  <meta property="og:site_name" content="AestheFill Pro" />
+
+  <!-- Schema.org — ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Trade Enquiry — AestheFill Pro",
+    "url": "https://www.yourdomain.com/contact.html",
+    "description": "Wholesale trade enquiry form for licensed aesthetic practitioners and clinics to request pricing for CE-certified dermal fillers.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AestheFill Pro",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "trade@yourdomain.com",
+          "availableLanguage": ["English"],
+          "areaServed": ["US", "EU", "GB"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@yourdomain.com",
+          "availableLanguage": ["English"]
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: var(--space-16);
+      align-items: flex-start;
+    }
+
+    .contact-sidebar {
+      position: sticky;
+      top: calc(var(--nav-height) + var(--space-8));
+    }
+
+    .contact-info-card {
+      background: var(--color-navy);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      margin-bottom: var(--space-6);
+    }
+
+    .contact-info-item {
+      display: flex;
+      gap: var(--space-4);
+      padding-block: var(--space-5);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .contact-info-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .contact-info-item:first-child {
+      padding-top: 0;
+    }
+
+    .contact-info-item__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      background: rgba(201,168,76,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-gold);
+    }
+
+    .contact-info-item__icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .contact-info-item__label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--space-1);
+    }
+
+    .contact-info-item__value {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.80);
+      font-weight: 500;
+    }
+
+    .contact-info-item__sub {
+      font-size: var(--text-xs);
+      color: rgba(255,255,255,0.45);
+      margin-top: 2px;
+    }
+
+    .process-card {
+      background: var(--color-off-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      border: 1px solid var(--color-border);
+    }
+
+    .process-mini-step {
+      display: flex;
+      gap: var(--space-4);
+      padding-block: var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .process-mini-step:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .process-mini-step:first-child {
+      padding-top: 0;
+    }
+
+    .process-mini-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      color: var(--color-navy);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .process-mini-content strong {
+      display: block;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: 2px;
+    }
+
+    .process-mini-content span {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+    }
+
+    .form-section-title {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      cursor: pointer;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid var(--color-border);
+      border-radius: 4px;
+      cursor: pointer;
+      accent-color: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    .checkbox-item label {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      cursor: pointer;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: var(--space-12);
+    }
+
+    .form-success__icon {
+      font-size: 3rem;
+      margin-bottom: var(--space-4);
+    }
+
+    @media (max-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-sidebar {
+        position: static;
+        order: 2;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .checkbox-group {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement-bar" role="banner">
+    <strong>Verified Trade Accounts Only</strong> — Licensed practitioners and registered clinics · Verification within 1 business day
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="AestheFill Pro — Home">
+        <div class="nav__logo-mark" aria-hidden="true">A</div>
+        <span class="nav__logo-text">Aesthete<span>Fill</span> Pro</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="products.html" class="nav__link">Products</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link active" aria-current="page">Contact</a></li>
+      </ul>
+      <a href="#enquire" class="nav__cta">Enquire to Purchase →</a>
+      <button class="nav__hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="products.html" class="mobile-menu__link">Products</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <div style="margin-top: 2rem;">
+      <a href="#enquire" class="btn btn--primary btn--lg" style="width:100%; justify-content:center;">Enquire to Purchase →</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="contact-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">›</span>
+          <span aria-current="page">Contact &amp; Enquire</span>
+        </nav>
+        <h1 id="contact-heading">Start Your Trade Enquiry.</h1>
+        <p>Complete the form below. Licence verification within 1 business day. Personalised pricing from your account manager within 24 hours of activation.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         MAIN ENQUIRY SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="enquire" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Main Form -->
+          <div>
+            <h2 id="form-heading" style="margin-bottom: var(--space-3);">Trade Enquiry Form</h2>
+            <p style="margin-bottom: var(--space-8); color: var(--color-text-muted);">
+              This form is for licensed practitioners and registered clinics only. All fields marked with <span aria-label="required" style="color: var(--color-gold); font-weight: 700;">*</span> are required. We will respond within 24 hours on business days.
+            </p>
+
+            <form id="enquiry-form" novalidate aria-label="Trade enquiry form" style="display:flex; flex-direction:column; gap: var(--space-8);">
+
+              <!-- Section 1: Practice Details -->
+              <fieldset style="border:none; padding:0; margin:0;">
+                <legend class="form-section-title">Your Practice Details</legend>
+
+                <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label class="form-label" for="first-name">First Name <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                      <input
+                        type="text"
+                        id="first-name"
+                        name="first_name"
+                        class="form-input"
+                        placeholder="Dr. Jane"
+                        autocomplete="given-name"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="last-name">Last Name <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                      <input
+                        type="text"
+                        id="last-name"
+                        name="last_name"
+                        class="form-input"
+                        placeholder="Smith"
+                        autocomplete="family-name"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="clinic-name">Clinic / Practice Name <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                    <input
+                      type="text"
+                      id="clinic-name"
+                      name="clinic_name"
+                      class="form-input"
+                      placeholder="e.g. City Aesthetics Clinic"
+                      autocomplete="organization"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label class="form-label" for="email">Business Email <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="jane@yourclinic.com"
+                        autocomplete="email"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="phone">Phone Number <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="form-input"
+                        placeholder="+1 (555) 000-0000"
+                        autocomplete="tel"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label class="form-label" for="country">Country <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                      <select id="country" name="country" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select your country</option>
+                        <optgroup label="North America">
+                          <option value="US">United States</option>
+                          <option value="CA">Canada</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                          <option value="GB">United Kingdom</option>
+                          <option value="DE">Germany</option>
+                          <option value="FR">France</option>
+                          <option value="IT">Italy</option>
+                          <option value="ES">Spain</option>
+                          <option value="NL">Netherlands</option>
+                          <option value="BE">Belgium</option>
+                          <option value="SE">Sweden</option>
+                          <option value="NO">Norway</option>
+                          <option value="DK">Denmark</option>
+                          <option value="FI">Finland</option>
+                          <option value="AT">Austria</option>
+                          <option value="CH">Switzerland</option>
+                          <option value="PL">Poland</option>
+                          <option value="PT">Portugal</option>
+                          <option value="IE">Ireland</option>
+                          <option value="EU-OTHER">Other EU / EEA Country</option>
+                        </optgroup>
+                        <optgroup label="Other Regions">
+                          <option value="AU">Australia</option>
+                          <option value="NZ">New Zealand</option>
+                          <option value="OTHER">Other</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="practice-type">Practice Type <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                      <select id="practice-type" name="practice_type" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select practice type</option>
+                        <option value="solo-practitioner">Solo Practitioner</option>
+                        <option value="aesthetic-clinic">Aesthetic Clinic (1 location)</option>
+                        <option value="multi-location">Multi-Location Clinic Group</option>
+                        <option value="medical-spa">Medical Spa / MedSpa</option>
+                        <option value="plastic-surgery">Plastic Surgery Centre</option>
+                        <option value="dermatology">Dermatology Practice</option>
+                        <option value="distributor">Wholesale Distributor</option>
+                        <option value="other">Other Healthcare Organisation</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- Section 2: Licence Verification -->
+              <fieldset style="border:none; padding:0; margin:0;" id="verification">
+                <legend class="form-section-title">Professional Credentials</legend>
+
+                <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+
+                  <div class="highlight-box">
+                    <p>Account activation requires verification of a valid practitioner licence or business registration number. This is a regulatory requirement for the sale of medical devices in both the EU and US markets.</p>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="licence-number">Practitioner Licence / Registration Number <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                    <input
+                      type="text"
+                      id="licence-number"
+                      name="licence_number"
+                      class="form-input"
+                      placeholder="e.g. GMC 1234567 / DEA ABCD1234567"
+                      required
+                      aria-required="true"
+                      aria-describedby="licence-hint"
+                    />
+                    <span class="form-hint" id="licence-hint">Enter your medical board, aesthetic council, or business registration number. This will be verified by our compliance team.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="issuing-body">Issuing Body / Registration Council</label>
+                    <input
+                      type="text"
+                      id="issuing-body"
+                      name="issuing_body"
+                      class="form-input"
+                      placeholder="e.g. General Medical Council, State Medical Board of California"
+                      aria-describedby="issuing-hint"
+                    />
+                    <span class="form-hint" id="issuing-hint">Optional but speeds up verification significantly.</span>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- Section 3: Product Interest -->
+              <fieldset style="border:none; padding:0; margin:0;">
+                <legend class="form-section-title">Products of Interest</legend>
+
+                <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+
+                  <div class="form-group">
+                    <label class="form-label" style="margin-bottom: var(--space-3);" id="products-label">Which products are you interested in? <span aria-hidden="true" style="color: var(--color-gold);">*</span></label>
+                    <div class="checkbox-group" role="group" aria-labelledby="products-label">
+                      <label class="checkbox-item">
+                        <input type="checkbox" name="products[]" value="aesthefill-soft" />
+                        <span>AestheFill Soft</span>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" name="products[]" value="aesthefill-volume" />
+                        <span>AestheFill Volume</span>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" name="products[]" value="aesthefill-deep" />
+                        <span>AestheFill Deep</span>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" name="products[]" value="full-range" checked />
+                        <span>Full Range (All Three)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="monthly-volume">Estimated Monthly Volume</label>
+                    <select id="monthly-volume" name="monthly_volume" class="form-select" aria-describedby="volume-hint">
+                      <option value="" disabled selected>Select approximate monthly usage</option>
+                      <option value="1-10">1–10 syringes per month</option>
+                      <option value="11-30">11–30 syringes per month</option>
+                      <option value="31-100">31–100 syringes per month</option>
+                      <option value="101-500">101–500 syringes per month</option>
+                      <option value="500+">500+ syringes per month</option>
+                      <option value="unsure">Not sure yet</option>
+                    </select>
+                    <span class="form-hint" id="volume-hint">Helps us provide the most accurate tier pricing. This is not a commitment.</span>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- Section 4: Additional Info -->
+              <fieldset style="border:none; padding:0; margin:0;">
+                <legend class="form-section-title">Additional Information</legend>
+
+                <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+
+                  <div class="form-group">
+                    <label class="form-label" for="message">Message or Questions (Optional)</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-textarea"
+                      placeholder="Any specific questions about the products, compliance documentation, delivery timelines, or anything else — let us know here."
+                      aria-describedby="message-hint"
+                    ></textarea>
+                    <span class="form-hint" id="message-hint">Our account managers read every message personally. Nothing goes to a bot.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="how-found">How Did You Hear About AestheFill Pro?</label>
+                    <select id="how-found" name="how_found" class="form-select">
+                      <option value="" disabled selected>Select one</option>
+                      <option value="google">Google Search</option>
+                      <option value="colleague">Colleague / Referral</option>
+                      <option value="conference">Industry Conference or Event</option>
+                      <option value="social">Social Media (Instagram / LinkedIn)</option>
+                      <option value="publication">Medical / Trade Publication</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- Consent & Submit -->
+              <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+
+                <label class="checkbox-item" style="align-items: flex-start; gap: var(--space-3);">
+                  <input
+                    type="checkbox"
+                    name="consent_data"
+                    id="consent-data"
+                    required
+                    aria-required="true"
+                    style="margin-top: 3px; flex-shrink:0;"
+                  />
+                  <span style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.6;">
+                    I confirm that I am a licensed practitioner or authorised representative of a registered healthcare business. I agree to the processing of my data for the purpose of account verification and trade enquiry, in accordance with the <a href="privacy.html" style="color: var(--color-navy); text-decoration:underline;">Privacy Policy</a>. <span aria-hidden="true" style="color: var(--color-gold);">*</span>
+                  </span>
+                </label>
+
+                <label class="checkbox-item" style="align-items: flex-start; gap: var(--space-3);">
+                  <input
+                    type="checkbox"
+                    name="consent_marketing"
+                    id="consent-marketing"
+                    style="margin-top: 3px; flex-shrink:0;"
+                  />
+                  <span style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.6;">
+                    I would like to receive product updates, regulatory news, and trade offers from AestheFill Pro. I understand I can unsubscribe at any time.
+                  </span>
+                </label>
+
+                <button
+                  type="submit"
+                  class="btn btn--primary btn--lg"
+                  id="submit-btn"
+                  aria-label="Submit your trade enquiry"
+                  style="align-self: flex-start;"
+                >
+                  Submit My Trade Enquiry →
+                </button>
+
+                <p style="font-size: var(--text-xs); color: var(--color-text-muted);">
+                  By submitting this form you confirm the information provided is accurate. False declarations may result in account cancellation. For urgent queries, email <a href="mailto:trade@yourdomain.com" style="color: var(--color-navy);">trade@yourdomain.com</a> directly.
+                </p>
+
+              </div>
+
+            </form>
+
+            <!-- Success state -->
+            <div class="form-success" id="form-success" role="alert" aria-live="polite">
+              <div class="form-success__icon" aria-hidden="true">✓</div>
+              <h3 style="color: var(--color-navy); margin-bottom: var(--space-3);">Enquiry Received.</h3>
+              <p style="font-size: var(--text-lg); color: var(--color-text-muted); max-width: 480px; margin-inline: auto;">
+                Thank you. Our compliance team will verify your credentials within 1 business day. Your account manager will be in touch within 24 hours of verification with your personalised pricing.
+              </p>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-4);">
+                In the meantime, you can review our full <a href="products.html" style="color: var(--color-navy); font-weight:600;">product catalogue</a>.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="contact-sidebar" aria-label="Contact information and process">
+
+            <!-- Contact Info Card -->
+            <div class="contact-info-card" aria-label="Direct contact details">
+
+              <h3 style="color: var(--color-white); font-family: var(--font-display); font-size: var(--text-2xl); margin-bottom: var(--space-6);">Get in Touch Directly.</h3>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-item__label">Trade Enquiries</div>
+                  <div class="contact-info-item__value">
+                    <a href="mailto:trade@yourdomain.com" style="color: inherit;">trade@yourdomain.com</a>
+                  </div>
+                  <div class="contact-info-item__sub">Response within 24 hours</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-item__label">Account Support</div>
+                  <div class="contact-info-item__value">
+                    <a href="mailto:support@yourdomain.com" style="color: inherit;">support@yourdomain.com</a>
+                  </div>
+                  <div class="contact-info-item__sub">For existing account holders</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-item__label">Business Hours</div>
+                  <div class="contact-info-item__value">Monday – Friday</div>
+                  <div class="contact-info-item__sub">09:00 – 17:00 CET</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-item__label">Coverage</div>
+                  <div class="contact-info-item__value">USA &amp; Europe</div>
+                  <div class="contact-info-item__sub">EU · UK · EEA · United States</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Process Card -->
+            <div class="process-card" aria-label="What happens after you submit">
+              <h5 style="color: var(--color-navy); margin-bottom: var(--space-5); font-size: var(--text-base);">What Happens After You Submit</h5>
+
+              <div class="process-mini-step">
+                <div class="process-mini-num" aria-label="Step 1">1</div>
+                <div class="process-mini-content">
+                  <strong>Enquiry Received</strong>
+                  <span>Confirmation email sent to your address immediately.</span>
+                </div>
+              </div>
+
+              <div class="process-mini-step">
+                <div class="process-mini-num" aria-label="Step 2">2</div>
+                <div class="process-mini-content">
+                  <strong>Licence Verification</strong>
+                  <span>Our compliance team verifies your credentials. Typically within 1 business day.</span>
+                </div>
+              </div>
+
+              <div class="process-mini-step">
+                <div class="process-mini-num" aria-label="Step 3">3</div>
+                <div class="process-mini-content">
+                  <strong>Account Activation</strong>
+                  <span>Your trade account is activated and your account manager assigned.</span>
+                </div>
+              </div>
+
+              <div class="process-mini-step">
+                <div class="process-mini-num" aria-label="Step 4">4</div>
+                <div class="process-mini-content">
+                  <strong>Pricing &amp; Terms</strong>
+                  <span>Personalised pricing, MOQs, and payment terms provided within 24 hours of activation.</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Trust indicators -->
+            <div style="display:flex; flex-direction:column; gap: var(--space-3); margin-top: var(--space-5);">
+              <div style="display:flex; align-items:center; gap: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted);">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: var(--color-success); flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Your data is encrypted and never sold to third parties
+              </div>
+              <div style="display:flex; align-items:center; gap: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted);">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: var(--color-success); flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                No commitment required at the enquiry stage
+              </div>
+              <div style="display:flex; align-items:center; gap: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted);">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: var(--color-success); flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Dedicated human account manager, not a support ticket
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SAMPLE REQUEST SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="section section--slate" id="samples" aria-labelledby="samples-heading">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="eyebrow">Not Ready to Order Yet?</span>
+        <h2 id="samples-heading" style="margin-top: var(--space-3); margin-bottom: var(--space-4);">
+          Request a Product Sample First.
+        </h2>
+        <p class="lead" style="margin-bottom: var(--space-6);">
+          We offer product samples to verified practitioners considering switching suppliers or adding a new range to their clinic. Subject to account verification and availability.
+        </p>
+        <p style="margin-bottom: var(--space-8); color: var(--color-text-muted);">
+          To request a sample, mention it in the Additional Information field of the main enquiry form, or email our trade team at <a href="mailto:trade@yourdomain.com" style="color: var(--color-navy); font-weight: 600;">trade@yourdomain.com</a> with the subject line "Sample Request."
+        </p>
+        <a href="#enquire" class="btn btn--primary btn--lg" aria-label="Submit an enquiry that includes a sample request">Include Sample Request in My Enquiry →</a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FAQ ON CONTACT PAGE
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="faq" aria-labelledby="contact-faq-heading">
+      <div class="container container--narrow">
+
+        <div class="section-header">
+          <span class="eyebrow">Before You Submit</span>
+          <h2 id="contact-faq-heading">Quick Answers to Common Enquiry Questions.</h2>
+        </div>
+
+        <div role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="cfaq-1" onclick="toggleFAQ(this)">
+              <h4>I am a nurse practitioner / aesthetic nurse. Can I purchase?</h4>
+              <div class="faq-question__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            </button>
+            <div class="faq-answer" id="cfaq-1" role="region">
+              <p>Yes. Eligibility extends to registered nurses and nurse practitioners licensed to administer injectable treatments in their jurisdiction. You will need to provide your NMC, NPI, or equivalent registration number at account verification. The specific licence required depends on the scope of practice regulations in your country and state.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="cfaq-2" onclick="toggleFAQ(this)">
+              <h4>I represent a distributor, not a clinic. Can we work together?</h4>
+              <div class="faq-question__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            </button>
+            <div class="faq-answer" id="cfaq-2" role="region">
+              <p>Yes. We supply to registered wholesale distributors operating in the medical device space, subject to verification of your distribution licence and registration. Select "Wholesale Distributor" under Practice Type in the enquiry form, and our trade team will assess your application accordingly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="cfaq-3" onclick="toggleFAQ(this)">
+              <h4>Is there a minimum first order or account fee?</h4>
+              <div class="faq-question__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            </button>
+            <div class="faq-answer" id="cfaq-3" role="region">
+              <p>There is no account set-up fee. Minimum order quantities vary by product. Your account manager will provide your specific MOQs after verification — and they are set to be accessible for solo practitioners and small clinics, not only large groups.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="cfaq-4" onclick="toggleFAQ(this)">
+              <h4>How quickly can I receive a first order after account activation?</h4>
+              <div class="faq-question__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            </button>
+            <div class="faq-answer" id="cfaq-4" role="region">
+              <p>Once your account is active, orders are typically dispatched within 48 hours of confirmation. EU delivery is usually 2–5 business days. US delivery is typically 5–10 business days depending on customs clearance. Your account manager will provide an accurate timeline for your specific location.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>AestheFill Pro</h3>
+          <p>Premium CE-certified dermal fillers and hyaluronic acid injectables, supplied wholesale to licensed aesthetic practitioners across the USA and Europe.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="products.html#soft">AestheFill Soft</a></li>
+            <li><a href="products.html#volume">AestheFill Volume</a></li>
+            <li><a href="products.html#deep">AestheFill Deep</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#compliance">Compliance</a></li>
+            <li><a href="about.html#team">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#enquire">Trade Enquiry Form</a></li>
+            <li><a href="mailto:trade@yourdomain.com">trade@yourdomain.com</a></li>
+            <li><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 AestheFill Pro. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Sale</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+      </div>
+      <p class="footer__compliance">Products are medical devices sold exclusively to licensed practitioners. CE-marked under EU MDR 2017/745. Not for retail consumer sale. Submission of false credentials is a regulatory offence.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', function () {
+      const isOpen = mobileMenu.classList.contains('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', !isOpen);
+      document.body.style.overflow = isOpen ? '' : 'hidden';
+    });
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // FAQ accordion
+    function toggleFAQ(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function (el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // Form submission (demo — replace with real backend/Formspree/etc.)
+    const form = document.getElementById('enquiry-form');
+    const successState = document.getElementById('form-success');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Basic validation
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+
+      required.forEach(function (field) {
+        if (field.type === 'checkbox' && !field.checked) {
+          valid = false;
+          field.closest('.checkbox-item').style.outline = '2px solid red';
+          field.closest('.checkbox-item').style.borderRadius = '4px';
+        } else if (field.type !== 'checkbox' && !field.value.trim()) {
+          valid = false;
+          field.style.borderColor = '#e53e3e';
+        } else {
+          if (field.type === 'checkbox') {
+            field.closest('.checkbox-item').style.outline = '';
+          } else {
+            field.style.borderColor = '';
+          }
+        }
+      });
+
+      if (!valid) {
+        const firstError = form.querySelector('[required]:invalid, [style*="red"]');
+        if (firstError) {
+          firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          firstError.focus();
+        }
+        return;
+      }
+
+      // Simulate submission
+      submitBtn.textContent = 'Submitting…';
+      submitBtn.disabled = true;
+
+      setTimeout(function () {
+        form.style.display = 'none';
+        successState.style.display = 'block';
+        successState.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 1200);
+    });
+
+    // Clear error styling on input
+    form.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(function (el) {
+      el.addEventListener('input', function () {
+        this.style.borderColor = '';
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 88;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
