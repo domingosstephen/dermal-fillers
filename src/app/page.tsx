@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
+import FAQAccordion from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
   title: 'Dermal Fillers Wholesale Supplier | CE-Certified Hyaluronic Acid Fillers | USA & Europe',
@@ -418,7 +419,17 @@ export default function HomePage() {
               <span className="eyebrow">Frequently Asked Questions</span>
               <h2 id="faq-heading">What Practitioners Usually Ask Before Enquiring.</h2>
             </div>
-            <FAQAccordion />
+            <FAQAccordion
+              idPrefix="home-faq"
+              items={[
+                { q: 'Who can purchase dermal fillers wholesale from AestheFill Pro?', a: 'Our products are available exclusively to licensed aesthetic practitioners, cosmetic clinics, plastic surgery centres, medical spas, and registered medical wholesalers. Valid professional credentials — including a practitioner licence or business registration number — are verified before account activation. This is a regulatory requirement, not a commercial preference.' },
+                { q: 'Are your dermal fillers CE-certified and FDA-compliant?', a: 'Yes. All products in our catalogue carry CE marking under EU MDR 2017/745, the current Medical Device Regulation applicable to all aesthetic injectables sold in the European Union and EEA. For the US market, we provide full import compliance documentation with each order. Certificates are included in every shipment and can be requested prior to purchase.' },
+                { q: 'What is the minimum order quantity (MOQ)?', a: 'Minimum order quantities vary by product line and are designed to be accessible for both single-practitioner clinics and multi-location groups. We offer tiered pricing — the more you order, the better your unit economics. Your account manager will provide your personalised MOQ and pricing structure after licence verification. Enquire today to receive a quote specific to your practice volume.' },
+                { q: 'How is cold-chain maintained during shipping?', a: 'All orders are packed in validated insulated packaging with temperature-monitoring devices included. Our logistics partners are vetted for healthcare cold-chain compliance. Temperature records from dispatch to delivery are provided with every order — documentation you can share with patients or regulatory inspectors if needed.' },
+                { q: 'How long does account verification and first delivery take?', a: 'Licence verification is typically completed within 1 business day of receiving your credentials. Once your account is active and an order is placed, standard dispatch is within 48 hours. Delivery timelines vary by destination — typically 2–5 business days within Europe and 5–10 business days for US shipments, depending on customs.' },
+                { q: 'Do you ship to countries outside the USA and EU?', a: 'Currently our primary distribution is the United States and European Union (including UK and EEA countries). We are expanding to additional markets. If your country is not listed, contact our trade team — we assess new markets on a case-by-case basis and may be able to accommodate your enquiry.' },
+              ]}
+            />
           </div>
         </section>
 
@@ -447,55 +458,3 @@ export default function HomePage() {
   );
 }
 
-function FAQAccordion() {
-  const faqs = [
-    { q: 'Who can purchase dermal fillers wholesale from AestheFill Pro?', a: 'Our products are available exclusively to licensed aesthetic practitioners, cosmetic clinics, plastic surgery centres, medical spas, and registered medical wholesalers. Valid professional credentials — including a practitioner licence or business registration number — are verified before account activation. This is a regulatory requirement, not a commercial preference.' },
-    { q: 'Are your dermal fillers CE-certified and FDA-compliant?', a: 'Yes. All products in our catalogue carry CE marking under EU MDR 2017/745, the current Medical Device Regulation applicable to all aesthetic injectables sold in the European Union and EEA. For the US market, we provide full import compliance documentation with each order. Certificates are included in every shipment and can be requested prior to purchase.' },
-    { q: 'What is the minimum order quantity (MOQ)?', a: 'Minimum order quantities vary by product line and are designed to be accessible for both single-practitioner clinics and multi-location groups. We offer tiered pricing — the more you order, the better your unit economics. Your account manager will provide your personalised MOQ and pricing structure after licence verification. Enquire today to receive a quote specific to your practice volume.' },
-    { q: 'How is cold-chain maintained during shipping?', a: 'All orders are packed in validated insulated packaging with temperature-monitoring devices included. Our logistics partners are vetted for healthcare cold-chain compliance. Temperature records from dispatch to delivery are provided with every order — documentation you can share with patients or regulatory inspectors if needed.' },
-    { q: 'How long does account verification and first delivery take?', a: 'Licence verification is typically completed within 1 business day of receiving your credentials. Once your account is active and an order is placed, standard dispatch is within 48 hours. Delivery timelines vary by destination — typically 2–5 business days within Europe and 5–10 business days for US shipments, depending on customs.' },
-    { q: 'Do you ship to countries outside the USA and EU?', a: 'Currently our primary distribution is the United States and European Union (including UK and EEA countries). We are expanding to additional markets. If your country is not listed, contact our trade team — we assess new markets on a case-by-case basis and may be able to accommodate your enquiry.' },
-  ];
-
-  return (
-    <div role="list">
-      {faqs.map((faq, i) => (
-        <FAQItem key={i} question={faq.q} answer={faq.a} id={`faq-${i}`} />
-      ))}
-    </div>
-  );
-}
-
-function FAQItem({ question, answer, id }: { question: string; answer: string; id: string }) {
-  return (
-    <div className="faq-item" role="listitem" id={id}>
-      <button
-        className="faq-question"
-        aria-expanded="false"
-        aria-controls={`${id}-answer`}
-        onClick={(e) => {
-          const item = (e.currentTarget as HTMLElement).closest('.faq-item') as HTMLElement;
-          const isOpen = item.classList.contains('open');
-          document.querySelectorAll('.faq-item.open').forEach((el) => {
-            el.classList.remove('open');
-            (el.querySelector('.faq-question') as HTMLElement)?.setAttribute('aria-expanded', 'false');
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            (e.currentTarget as HTMLElement).setAttribute('aria-expanded', 'true');
-          }
-        }}
-      >
-        <h4>{question}</h4>
-        <div className="faq-question__icon" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-        </div>
-      </button>
-      <div className="faq-answer" id={`${id}-answer`} role="region">
-        <p>{answer}</p>
-      </div>
-    </div>
-  );
-}
